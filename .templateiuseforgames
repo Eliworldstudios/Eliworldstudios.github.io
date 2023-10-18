@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Title</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Game Title</h1>
+    </header>
+
+    <section>
+        <h2>Download Game Title</h2>
+        <p>Get the game on Game Platform:</p>
+        <a href="GameLink" target="_blank">
+            <button>Visit the Game Page</button>
+        </a>
+    </section>
+
+    <section>
+        <h2>DevLog and Source Code</h2>
+        <p>Check out the source code on GitHub:</p>
+        <a href="GitHubSourceLink" target="_blank">
+            <button>Check Out the Source Code</button>
+        </a>
+    </section>
+
+    <section>
+        <h2>Devlog</h2>
+        <p>The Game Title devlog. Updated regularly:</p>
+        <a href="DevLogLink">
+            <button>The Game Title Devlog</button>
+        </a>
+    </section>
+
+    <section>
+        <h2>Extra Info</h2>
+        <p>Started development: Start Date</p>
+        <p>Ended development: End Date (if applicable)</p>
+        <p>Current version available: Version Number</p>
+    </section>
+
+    <section>
+        <h2>Developers</h2>
+        <p>Developer Information (can be updated later)</p>
+    </section>
+</body>
+</html>
