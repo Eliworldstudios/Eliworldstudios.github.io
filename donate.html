@@ -1,1 +1,37 @@
+<form id="payment-form">
+   <!-- Add the cash-app-pay button div below -->
+   <div id="cash-app-pay"></div>
+   <div id="card-container"></div>
+   <button id="card-button" type="button">Pay $1.00</button>
+</form>
+<div id="payment-status-container"></div>
+<script>
+  function buildPaymentRequest(payments) {
+    const paymentRequest = payments.paymentRequest({
+      countryCode: 'US',
+      currencyCode: 'USD',
+      total: {
+        amount: '1.00',
+        label: 'Total',
+      }
+    });
+    return paymentRequest;
+  }
 
+  async function initializeCashApp(payments) {
+    const paymentRequest = buildPaymentRequest(payments)
+    const cashAppPay = await payments.cashAppPay(paymentRequest,{
+      redirectURL: 'https://my.website/checkout',
+      referenceId: 'my-website-00000001',
+    });
+    await cashAppPay.attach('#cash-app-pay');
+    return cashAppPay;
+  }
+  let cashAppPay;
+  try {
+    cashAppPay = await initializeCashApp(payments);
+  } catch (e) {
+    console.error('Initializing Cash App Pay failed', e);
+  }
+
+</script>
