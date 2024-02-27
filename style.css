@@ -25,6 +25,6 @@ header {
   display: block;
   width: 156px;
   height: 30px;
-  background-image: URL("/logo23.png");
+  background-image: URL("logo.png");
   background-repeat: no-repeat;
 }
