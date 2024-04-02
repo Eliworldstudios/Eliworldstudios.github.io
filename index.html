@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width">
   <title>WDX site</title>
   <style>
-    .button-container {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   .row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 16px 0;
+    }
+   .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 16px;
+    }
+   .image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 16px;
     }
   </style>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="centerbuttonsref.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="Favicon.png" type="image/x-icon">
 </head>
 
@@ -19,15 +41,25 @@
   <h1>Welcome to WaterDeluxeTeam</h1>
   <p1>---------------------------------------------------</p1>
 
-  <h1>Check Out our Games</h1>
-  <div class="button-container">
-    <button style="display: inline-block;" onclick="window.location.href='Games.html';">
-      <i class="fa fa-gamepad"></i> Games List (including legacy scratch games)
-    </button>
-
-    <button style="display: inline-block;" onclick="window.location.href='https://github.com/WaterDeluxeTeam';">
-      <i class="fa fa-github"></i> WaterDeluxeTeam Github
-    </button>
+  <div class="row">
+    <div class="column">
+      <img class="image" src="image1.png" alt="Image 1">
+      <button onclick="window.location.href='Games.html';">
+        <i class="fa fa-gamepad"></i> Games List (including legacy scratch games)
+      </button>
+    </div>
+    <div class="column">
+      <img class="image" src="image2.png" alt="Image 2">
+      <button onclick="window.location.href='https://github.com/WaterDeluxeTeam';">
+        <i class="fa fa-github"></i> WaterDeluxeTeam Github
+      </button>
+    </div>
+    <div class="column">
+      <img class="image" src="image3.png" alt="Image 3">
+      <button>
+        <i class="fa fa-gamepad"></i> Button 3
+      </button>
+    </div>
   </div>
 
   <h1>Make sure to check out the github page</h1>
