@@ -1,4 +1,4 @@
-# WaterDeluxeTeam.github.io
+# https://eliworldstudios.github.io/
 this was formerly my personal website but i figured it would make more sense to contribute on here
 
 
